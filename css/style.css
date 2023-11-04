@@ -1,0 +1,311 @@
+/* ____________ */
+/* Header */
+/* ___________ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5ebe7;
+  height: 9.6rem;
+  position: relative;
+  padding: 0 1.2rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: #7a2809;
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+/* ___________ */
+/* Section Hero */
+/* ___________ */
+.section-hero {
+  background-color: #f5ebe7;
+  padding: 3.2rem;
+}
+
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.heading-hero {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #2e0f03;
+  margin-bottom: 3rem;
+}
+
+.secondery-hero {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 6.4rem;
+}
+
+.hero-text-box {
+  text-align: center;
+}
+
+.hero-img-box {
+  text-align: center;
+}
+
+.hero-img {
+  width: 75%;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  padding: 1.8rem 8rem;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 2.4rem;
+  color: #7a2809;
+  border: 2px solid #7a2809;
+}
+
+.btn-hero:hover,
+.btn-hero:active {
+  border: 2px dotted #7a2809;
+}
+
+/* ___________________ */
+/* section-promoted-collection */
+/* ___________________ */
+
+.section-promoted-collection {
+  padding-top: 9.6rem;
+}
+
+.promoted-collections {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  list-style: none;
+}
+
+.promoted-collection-item {
+  transition: all 0.4s;
+}
+
+.promoted-collection-item:hover,
+.promoted-collection-item:active {
+  transform: translateX(-40px);
+  /* box-shadow: 0 40px 20px rgba(122, 39, 9, 0.31);  */
+}
+
+.promoted-collection-link:link,
+.promoted-collection-link:visited {
+  text-transform: uppercase;
+  font-size: 6.4rem;
+  color: #2e0f03;
+  text-decoration: none;
+  padding: 2.4rem 3rem;
+}
+
+/* ____________________ */
+/* section-collections-teaser */
+/* ____________________ */
+
+.section-collections-jewelry {
+  padding: 5.4rem 0;
+}
+.section-collections-jewelry img {
+  width: 100%;
+  /* height: 20%; */
+  padding: 2rem 0;
+}
+.collections-teasers {
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.collections-teasers img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.collections-teasers img:hover {
+  transform: translateY(-10px);
+}
+
+/* ____________________ */
+/* section-collection-handbags */
+/* ____________________ */
+
+.section-collection-handbags {
+  padding: 8.6rem 3.2rem;
+}
+.collections-handbag {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+.collections-handbags-item img {
+  width: 100%;
+  transition: all 0.4s;
+  padding: 1.8rem 3.2rem;
+}
+.collections-handbags-item img:hover {
+  transform: scale(1.5);
+}
+
+/* ____________________ */
+/* section-collection-nodde */
+/* ____________________ */
+
+.section-collection-nodde {
+  padding: 6.4rem 3.2rem;
+  height: 80rem;
+  margin-bottom: 4.8rem;
+}
+.collections-nodde {
+  display: grid;
+  position: relative;
+}
+.emphasis-nodde {
+  padding: 2rem;
+  font-size: 23rem;
+  text-transform: uppercase;
+  color: #2e0f03;
+}
+
+.emphasis-nodde-a {
+  position: absolute;
+  justify-self: end;
+  top: 160px;
+}
+
+.emphasis-nodde-b {
+  position: absolute;
+  justify-self: center;
+  top: 370px;
+}
+
+.img-nodde {
+  width: 30%;
+  position: absolute;
+  left: 500px;
+  top: 50px;
+  transition: all 0.3s;
+}
+
+.img-nodde:hover {
+  transform: translateY(-30px);
+}
+
+.nodde-bags {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  padding: 0 3.2rem;
+}
+.nodde-bags img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.nodde-bags img:hover {
+  transform: translateY(-10px);
+}
+
+.part-nodde {
+  padding-top: 3.2rem;
+}
+
+.description-nodde,
+.pelone-text {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 3.2rem;
+}
+
+/* ____________________ */
+/* section-pelone */
+/* ____________________ */
+
+
+.section-pelone {
+  padding: 9.6rem 0;
+}
+
+.pelone-img img {
+  width: 100%;
+  height: 100%;
+  padding: 4.8rem 0;
+}
+
+
+/* ____________________ */
+/* footer */
+/* ____________________ */
+
+
+footer {
+  border-top: 1px solid #ead6ce;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 8.6rem 3.2rem 0 3.2rem;
+}
+
+.section-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-nav {
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #98320b;
+  font-size: 1.6rem;
+}
+
+.form {
+  padding: 2.4rem;
+}
+
+.form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #7a2809;
+}
+
+.form input {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #b77054;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form input::placeholder {
+  color: #2e0f03;
+}
+
+.form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(122, 39, 9, 0.673);
+}

@@ -1,0 +1,183 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px ( desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .collection-bags-nodde {
+    max-width: 130rem;
+  }
+
+  .img-nodde {
+    top: 100px;
+  }
+}
+
+/* 1056PX (Smeller LAPTOP)*/
+@media (max-width: 66em) {
+  html {
+    font-size: 56.25;
+  }
+  .heading-hero {
+    font-size: 4rem;
+  }
+  .emphasis-nodde {
+    font-size: 20rem;
+  }
+
+  .img-nodde {
+    top: 150px;
+  }
+}
+/* 960PX (tablet)  */
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 40%;
+  }
+
+  .collections-teasers,
+  .nodde-bags {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .none {
+    display: none;
+  }
+
+  .emphasis-nodde-b {
+    top: 340px;
+  }
+
+  .collections-handbags-item img {
+    padding: 1rem;
+  }
+
+  .collections-handbags-item img:hover {
+    transform: none;
+  }
+
+  .pelone-text,
+  .secondery-hero,
+  .description-nodde {
+    font-size: 1.8rem;
+  }
+
+  .footer-link {
+    font-size: 1.6rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* footer */
+
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .section-footer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
+  }
+
+  .section-collection-handbags,
+  .section-collection-nodde,
+  .section-collections-jewelry,
+  .section-pelone{
+    padding: 5rem 0;
+  }
+
+  .section-pelone{
+    margin-bottom: 8.6rem;
+  }
+}
+/* BELOW 704px (SMALLER TABLET) */
+
+@media (max-width: 40em) {
+  .btn-hero:link,
+  .btn-hero:visited {
+    padding: 1.6rem 6rem;
+  }
+
+  .collections-handbag {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    padding: 4.8rem 3.2rem;
+  }
+  .emphasis-nodde {
+    font-size: 18rem;
+  }
+
+  .promoted-collection {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .emphasis-nodde {
+    font-size: 16rem;
+  }
+}
